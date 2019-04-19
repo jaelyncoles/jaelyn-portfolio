@@ -1,0 +1,98 @@
+#main{
+    background-image:url("/photos/background.jpg");
+    }
+  
+  
+  #header-div{
+   text-align:center;
+    width:100%;
+    background:wheat;
+    position:static;
+    z-index:-1;
+    padding:30px;
+    margin-bottom:-50px;
+  }
+  #name{
+   font-size:70px;
+  }
+  #header{
+    font-family: 'Carter One', cursive;
+    align-text:center;
+    font-size:20px;
+    text-align:center;
+    padding: 50px;
+    position:static;
+    width:100%;
+   
+    
+  }
+  
+  #img-div{position:relative;
+   padding-top:0px;
+    z-index:0;
+    
+    
+  }
+  #image {
+   display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:-50px;
+    border-style:solid;
+    border-radius:50%;
+    border-color:#d4af37;
+    border-width:10px;
+    max-width:100% ;
+    height:auto;
+    
+  }
+  #img-caption{
+    text-align:center;
+  }
+  
+  
+  
+  
+  .container{
+    display:flex;
+    flex-wrap:nowrap;
+    margin-top:75px;
+    padding:auto;
+    
+  }
+  p{padding-top:30px;}
+  #about{
+   
+    background:hsl(9, 3%, 35%,.8);
+    padding:50px;
+    margin-right:25px;
+  }
+  
+  #facts{
+    background:hsl(9, 3%, 35%,.8);
+    padding:50px;
+    margin-left:25px;
+  }
+  
+  #info {
+   text-align:center;
+   background:hsl(9, 3%, 35%,.8);
+   padding-top:30px;
+   padding-left:50px;
+   margin-top:50px;
+    
+  }
+  
+  #footer{
+    text-align:center;
+    background:hsl(9, 3%, 35%,.8);
+    font-size:15px;
+    padding-top:10px;
+    padding-left:70px;
+    margin-top:-8px;
+    }
+  
+  
+  
+  
+  

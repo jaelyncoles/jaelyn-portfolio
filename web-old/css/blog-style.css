@@ -1,0 +1,31 @@
+
+
+
+#jumbo{
+        background-image:url("/photos/IMG_4840.JPG");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        color:rgb(109, 95, 74);
+        font-family: 'Carter One', cursive;
+        margin-bottom:0;
+        
+    }
+
+    #sub{
+        margin-bottom:-45px;
+
+    }
+
+    #welcome{
+        
+        padding:25px;
+        
+    }
+
+    .row{
+        border:1px solid red;
+    }
+    .col{
+        border:1px solid blue;
+    }
