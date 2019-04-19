@@ -18,10 +18,18 @@
 					v-for="post in posts"
 					:key="post.id"
 					:caption="post.title"
-					:img-src="post.image"
+					
 				>
-					<div id="postText">{{post.text}}</div>
-					<a :href="post.link" class="btn-btn-light">Video Blog</a>
+				<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+       <p>{{post.text}}</p>
+        <a :href="post.link" class="btn-btn-light">Video Blog</a>
+      </div>
+    </div>
+  </div>
+	</div>
 				</b-carousel-slide>
 			</b-carousel>
 		</div>
@@ -39,13 +47,13 @@
 					//prework
 					{
 						id: 0,
-						title: "Pre-Work ",
+						title: "Phhhhhhhhhre-Work ",
 						text: `Before starting class we were given four weeks of work to do just to make sure we all entered into class with a little foundation.
 			                  The prework wasnt too challenging, and I enjoyed getting a small insight into what class would be like. 
 			                  The topics that were covered included HTML CSS and some javascript. 
 			                  I have some experience with these so I never really ran into any challenges completing the projects.
 			                  I am excited to begin learning full time, and can't wat to see how far I go in the the twelve weeks.`,
-						image:"/img/Screen Shot 2019-04-17 at 7.38.54 PM.png",
+						
 						link:"" 
 					},
 					//week
@@ -60,7 +68,7 @@
 	                  Over the rest of the week we learned a lot about writing HTML, CSS and Bootstrap. We made a campaign website for our first project. I enjoyed using Bootstrap and CSS to design my page. That’s really what interested me in coding in the first place.
 	                  I enjoy watching a blank webpage become something great.`,
 						link: "#",
-						image: "/img/Screen Shot 2019-04-17 at 7.38.54 PM.png"
+						
 					},
 					//week2
 					{
@@ -71,7 +79,7 @@
 	                    Just kidding. I was happy I got the experience of writing down what I needed and finding the JS methods to make them functional. The downside of it was I became overwhelmed many times while completing the exercises. I also feel like I fell behind this week because I was determined to build them myself but it took me way more time than anticipated.
 	                    Overall this week was great. I am enjoying my Time in camp, and I am really excited to see what come in the next week.`,
 						link: "#",
-						image: "/img/Screen Shot 2019-04-17 at 7.40.06 PM.png"
+						
 					},
 					//week3
 					{
@@ -81,9 +89,9 @@
 	                We started learning Vue this week. I was really excited to dive into it because we were told it would make javascript easier(THANK GOD). Im hoping the "easier" part comes soon because I'm not really seeing it.
 	                Our Vue project is to make a ToDo list. I'm trying to make it as simple as I can, getting caught up on design has been by downfall lately. I have to remember that I can always go back and fix things later.
 	                I am excited and feel like we're really picking up momentum. Two weeks ago I wasnt sure I could be a developer and now i feel like im almost there.`,
-						link: "#",
-						image: "#"
+						link: "#"
 					},
+					
 					//week4
 					{ id: 4, title: "Week 4 ", text: "", link: "#", image: "#" },
 					//week5

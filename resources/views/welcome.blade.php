@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Blog Page</title>
+        <title>Portfolio Page</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis">
         <link href="https://fonts.googleapis.com/css?family=Italianno|Julius+Sans+One|Open+Sans|Oregano|Satisfy|Staatliches|Voltaire" rel="stylesheet">
-        
+        <link rel="stylesheet" href="animate.min.css">
         <style>
         #jumbo {
             height:100vh;
@@ -54,7 +54,7 @@
             height:auto;
         }
         #app {
-    margin-top:300px;
+            margin-top:300px;
             background-color:white;
         }
         #nav {
@@ -63,15 +63,12 @@
         #blog{
             margin-top: 200px;
         }
-
         #about{
             width: 100%;
-            
-
+        }
         #blogJumbo{
             background-color:#D2BFAB;
         }
-
         #text{
             padding-top:100px;
         }
@@ -87,7 +84,6 @@
                     <b-nav-item><a href="#blog" style="color:black">Blog | </a> </b-nav-item>
                     <b-nav-item><a href="#portfolio" style="color:black">Portfolio | </a> </b-nav-item>
                     <b-nav-item><a href="#contact" style="color:black">Contact | </a> </b-nav-item>
-                    <b-nav-item><a href="#resume" style="color:black">Resume | </a> </b-nav-item>
                 </b-nav>
             </div>
             <div id="words" class="container">
@@ -97,37 +93,31 @@
             <div id="image-div">
                 <img id="image" src="/img/IMG_0632 copy.jpg" height=10% width=30%/>
             </div>
-             
         </div>
-
         <div id="app">
             <div id="about">
                 <div class="container">
                     <div class="row">
-                         <div id="text" class="col">
-                             <h1> A little bit About Me... </h1> 
-                                <p>I'm Jaelyn and I'm a full stack developer with a special interest in Digital art and design. I have always considered myself an artist without the ability to draw,
-                                 so I enjoy making my ideas come to life through programming. I am currently looking for full-time employment,
-                                 am very excited to Join a team where I can contribute, learn and grow. 
-                             </p>
-                            <h1 style="color:white">this is space to make the div longer. ive tried everything and im super annoyed so this is going to have to work.  </h1>
+                        <div id="text" class="col">
+                            <h1> A little bit About Me... </h1> 
+                            <p>I'm Jaelyn and I'm a full stack developer with a special interest in Digital art and design. I have always considered myself an artist without the ability to draw,
+                                so I enjoy making my ideas come to life through programming. I am currently looking for full-time employment,
+                                am very excited to Join a team where I can contribute, learn and grow. 
+                            </p>
+                            <h1 style="color:white"> this is space to make the div longer. ive tried everything and im super annoyed so this is going to have to work.  </h1>
                             
-                            <h1 style="color:white">this is space to make the div longer. ive tried everything and im super annoyed so this is going to have to work.  </h1>
-                            <h1 style="color:white">this is space to make the div longer. ive tried everything and im super annoyed so this is going to have to work.  </h1>
-                            
-                             </div>
+                        </div>
                         <div class="col">
-                            <about-component></about-component>
+                            <img class="animated slideInRight delay-4s" src= "/img/IMG_226975F1E663-1.jpg"/>
 
                         </div>
                     </div>
                 </div>
             </div>
-     <div id="blogJumbo"class="jumbotron jumbotron-fluid">
-    <div id=blog>
-              
-            <blog-component></blog-component>
-            </div>
+            <div id="blogJumbo"class="jumbotron jumbotron-fluid">
+                <div id=blog> 
+                    <blog-component></blog-component>
+                </div>
             </div>
         </div>
 
