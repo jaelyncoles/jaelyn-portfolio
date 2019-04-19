@@ -54,23 +54,34 @@
             height:auto;
         }
         #app {
-            margin-top:300px;
-            background-color:white;
-        }
+             margin-top:260px;
+                    }
         #nav {
             opacity: 100%;
         }
         #blog{
-            margin-top: 200px;
+            margin-top:;
         }
         #about{
             width: 100%;
         }
         #blogJumbo{
-            background-color:#D2BFAB;
+            background-color:;
         }
         #text{
-            padding-top:100px;
+            padding-top:;
+        }
+        .carousel-caption {
+            position: relative !important;
+            right: 0 !important;
+            bottom: 20px;
+            left: 0 !important;
+            z-index: 10;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #fff;
+            text-align: center;
+            display:block !important;
         }
         </style>
 
@@ -81,7 +92,7 @@
             <div id="nav">
                 <b-nav >
                     <b-nav-item><a href="#about" style="color:black">About | </a></b-nav-item>
-                    <b-nav-item><a href="#blog" style="color:black">Blog | </a> </b-nav-item>
+                    <b-nav-item><a href="#" style="color:black">Blog | </a> </b-nav-item>
                     <b-nav-item><a href="#portfolio" style="color:black">Portfolio | </a> </b-nav-item>
                     <b-nav-item><a href="#contact" style="color:black">Contact | </a> </b-nav-item>
                 </b-nav>
@@ -108,18 +119,57 @@
                             
                         </div>
                         <div class="col">
-                            <img class="animated slideInRight delay-4s" src= "/img/IMG_226975F1E663-1.jpg"/>
+                            <about-component></about-component>
 
                         </div>
                     </div>
                 </div>
             </div>
+
             <div id="blogJumbo"class="jumbotron jumbotron-fluid">
-                <div id=blog> 
-                    <blog-component></blog-component>
+                <div id="portfolio"> 
+                <div class="container">
+                    <div class="row">
+                        <div id="camp" class="col-md-3">
+                            <img src="/img/Screen Shot 2019-04-17 at 7.38.54 PM.png" height=100% width=100% />
+                        </div>
+                        <div id="calc" class="col-md-3">
+                        <a href="https://calculator-laravel.herokuapp.com/"><img src="/img/Screen Shot 2019-04-17 at 7.40.06 PM.png" height=100% width=100%/></a>
+                        </div>
+                        <div id="trib" class="col-md-3">
+                        <img src="/img/Screen Shot 2019-04-19 at 2.45.41 PM.png" height=100% width= 100%/>
+                        </div>
+                        <div id="todo" class="col-md-3">
+                        <img src=""/>
+                        </div>
+                        <div id="clock" class="col-md-3">
+                        <img src=""/>
+                        </div>
+                    </div>
                 </div>
-            </div>
+    </div>
+    </div>
+                <div id="contact"> 
+                <div text-align="centered" class=" container row">
+                    <div id="git" class="col-md-3">
+                       <a href="https://github.com/jaelyncoles" target="_blank"> <img src="/img/github-5-xxl_zchvtx.png" height=70% width=70%/></a>
+                    </div>
+                                <div id="phone" class="col-md-3 text-center my-3">
+                                    <img v-b-tooltip.hover title="(859)338-6085"src="/img/phone_tmzw19.png"height=70% width=70%/>
+                                </div>
+                                                <div id="linkin" class="col-md-3">
+                                           <a href="https://www.linkedin.com/in/jaelyncoles/" target="_blank"> <img src="/img/linkedin_hgnp3y.png" height=70% width=70%/></a>
+                                                </div>
+                 <div id="email" class="col-md-3">
+                    <img src="/img/email_hqpzpc.png"height=70% width=70%/>
+                     </div>
+                </div>
+                    
+                </div>
+            
         </div>
+
+  
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

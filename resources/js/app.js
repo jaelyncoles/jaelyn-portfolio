@@ -30,6 +30,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('blog-component', require('./components/blogComponent.vue').default);
+Vue.component('about-component', require('./components/aboutComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
