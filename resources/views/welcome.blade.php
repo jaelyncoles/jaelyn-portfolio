@@ -65,8 +65,9 @@
         #about{
             width: 100%;
         }
-        #blogJumbo{
-            background-color:;
+       
+        #portshot{
+            padding-top:75px;
         }
         #text{
             padding-top:;
@@ -83,6 +84,20 @@
             text-align: center;
             display:block !important;
         }
+
+        #resume{
+            padding-left:55px;
+            padding-bottom:55px;
+        }
+
+        #contact{
+            padding-left: 55px;
+        }
+        #icons{
+            padding-left:155px;
+        }
+
+
         </style>
 
     </head>
@@ -115,8 +130,7 @@
                                 so I enjoy making my ideas come to life through programming. I am currently looking for full-time employment,
                                 am very excited to Join a team where I can contribute, learn and grow. 
                             </p>
-                            <h1 style="color:white"> this is space to make the div longer. ive tried everything and im super annoyed so this is going to have to work.  </h1>
-                            
+                        
                         </div>
                         <div class="col">
                             <about-component></about-component>
@@ -128,13 +142,14 @@
 
             <div id="blogJumbo"class="jumbotron jumbotron-fluid">
                 <div id="portfolio"> 
-                <div class="container">
+                    <h1>Portfolio</h1>
+                <div id= "portshot" class="container">
                     <div class="row">
                         <div id="camp" class="col-md-3">
                             <img src="/img/Screen Shot 2019-04-17 at 7.38.54 PM.png" height=100% width=100% />
                         </div>
                         <div id="calc" class="col-md-3">
-                        <a href="https://calculator-laravel.herokuapp.com/"><img src="/img/Screen Shot 2019-04-17 at 7.40.06 PM.png" height=100% width=100%/></a>
+                        <a href="https://calculator-laravel.herokuapp.com/"target="_blank"><img src="/img/Screen Shot 2019-04-17 at 7.40.06 PM.png" height=100% width=100%/></a>
                         </div>
                         <div id="trib" class="col-md-3">
                         <img src="/img/Screen Shot 2019-04-19 at 2.45.41 PM.png" height=100% width= 100%/>
@@ -149,27 +164,79 @@
                 </div>
     </div>
     </div>
+    <div id="resume">
+        <h1> My Resume</h1>
+        <div class="row">
+            <div class="col-6-md">
+                <img src="/img/resume1.png">
+            </div>
+            <div class="col-6-md">
+                <img src="/img/resume2.png">
+            </div>
+        </div>
+     </div>
                 <div id="contact"> 
-                <div text-align="centered" class=" container row">
-                    <div id="git" class="col-md-3">
+                    <h1> Contact Me</h1>
+                <div id="icons" class=" text-center container row">
+                    <div id="git" class=" text-center col-md-2">
                        <a href="https://github.com/jaelyncoles" target="_blank"> <img src="/img/github-5-xxl_zchvtx.png" height=70% width=70%/></a>
                     </div>
-                                <div id="phone" class="col-md-3 text-center my-3">
+                                <div id="phone" class="col-2 text-center my-2">
                                     <img v-b-tooltip.hover title="(859)338-6085"src="/img/phone_tmzw19.png"height=70% width=70%/>
                                 </div>
-                                                <div id="linkin" class="col-md-3">
-                                           <a href="https://www.linkedin.com/in/jaelyncoles/" target="_blank"> <img src="/img/linkedin_hgnp3y.png" height=70% width=70%/></a>
-                                                </div>
-                 <div id="email" class="col-md-3">
-                    <img src="/img/email_hqpzpc.png"height=70% width=70%/>
-                     </div>
-                </div>
-                    
-                </div>
+                                <div id="email" class=" text-center col-2">
+                                    <button type="button"  data-toggle="modal" data-target="#exampleModal">
+                                        <img src="/img/email_hqpzpc.png"height=70% width=70%/>
+                                    </button>
+                                </div>
+                                  <div id="linkin" class=" text-center col-2">
+                                     <a href="https://www.linkedin.com/in/jaelyncoles/" target="_blank"> <img src="/img/linkedin_hgnp3y.png" height=70% width=70%/></a>
+                                         </div>
+                                         <div id="insta" class="text-center col-2">
+                                             <img v-b-tooltip.hover title="@pickmypuff" src="/img/insta.png" height=70% width=70%/>
+                                            </div>
+            </div>
+
+
+
             
         </div>
 
   
+      
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Email Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <form action="mailto:jaelyncoles@gmail.com" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
